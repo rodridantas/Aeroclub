@@ -6,40 +6,52 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+    <!--link de bs-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+
+    <!-- link de css-->
+
     <link rel="stylesheet" href="css/style.css">
 
     <title>Inicio</title>
 </head>
 
 <body>
-    <div class="contenedor">
-        <header>
-
+    <div class="conteiner">
+        <header class="row">
 
             <h1 class="titulo">AEROCLUB MAR DEL PLATA</h1>
 
-            <nav>
-                <ul>
-                    <li>
-                        <a href="index.html">Inicio</a>
-                    </li>
-                    <li>
-                        <a href="pages/cursos.html">Cursos</a>
-                    </li>
-                    <li>
-                        <a href="pages/nuestra_flota.html">Nuestra flota</a>
-                    </li>
-                    <li>
-                        <a href="pages/paseos_aereos.html">Paseos aereos</a>
-                    </li>
-                    <li>
-                        <a href="pages/contacto.html">Contacto</a>
-                    </li>
-                </ul>
-
-
-            </nav>
-
+            <div class="row">
+                <nav class="navbar navbar-expand-lg nav-background text-center col-12">
+                    <div class="container">
+                        <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                            aria-expanded="false" aria-label="Toggle navigation">
+                            <span class="navbar-toggler-icon"></span>
+                        </button>
+                        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                                <li class="nav-item">
+                                    <a class="nav-link active" aria-current="page" href="../index.html">Inicio</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="pages/cursos.html">Cursos</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="pages/nuestra_flota.html">Nuestra flota</a>
+                                </li class="nav-item">
+                                    <a class="nav-link" href="pages/paseos_aereos.html">Paseos aereos</a>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="pages/contacto.html">Contacto</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </nav>
+                
+            </div>
 
 
 
@@ -48,25 +60,31 @@
 
         <main class="menu">
             <div class="parrafo">
-            <p>Te damos la <strong> BIENVENIDA </strong> a la web oficial del Aeroclub de Mar del Plata, ubicado en la
-                ruta
-                88, km 9,5, de la ciudad de Mar del Plata, Provincia de Buenos Aires, Argentina. Te contamos que además
-                de
-                los servicios que brinda nuestra institución, existe el <strong> Centro de Instrucción de Aeronáutica
-                    Civil
-                    (CIAC) del Aeroclub Mar del Plata</strong>, que forma Pilotos desde el año 1939 y se encuentra
-                habilitado por la Administración Nacional de Aviación Civil (ANAC) de Argentina para formar Pilotos
-                Privados
-                y Comerciales de Avión, bajo las Regulaciones Argentinas de Aviación Civil (RAAC). El mismo se dicta
-                Bajo
-                las Normas OACI (Organización Internacional de Aviación Civil). Este es el organismo internacional más
-                grande que regula la aviación.
+                <p>Te damos la <strong> BIENVENIDA </strong> a la web oficial del Aeroclub de Mar del Plata, ubicado en
+                    la
+                    ruta
+                    88, km 9,5, de la ciudad de Mar del Plata, Provincia de Buenos Aires, Argentina. Te contamos que
+                    además
+                    de
+                    los servicios que brinda nuestra institución, existe el <strong> Centro de Instrucción de
+                        Aeronáutica
+                        Civil
+                        (CIAC) del Aeroclub Mar del Plata</strong>, que forma Pilotos desde el año 1939 y se encuentra
+                    habilitado por la Administración Nacional de Aviación Civil (ANAC) de Argentina para formar Pilotos
+                    Privados
+                    y Comerciales de Avión, bajo las Regulaciones Argentinas de Aviación Civil (RAAC). El mismo se dicta
+                    Bajo
+                    las Normas OACI (Organización Internacional de Aviación Civil). Este es el organismo internacional
+                    más
+                    grande que regula la aviación.
 
-                Toda América Central y del Sur son miembros y se rigen por las mismas normas, por lo que las licencias
-                que
-                se obtienen en cualquiera de los países miembros son capaz de revalidarse en los países que mantienen
-                convenios
-                de reciprocidad, excepto Brasil que no lo tiene.</p>
+                    Toda América Central y del Sur son miembros y se rigen por las mismas normas, por lo que las
+                    licencias
+                    que
+                    se obtienen en cualquiera de los países miembros son capaz de revalidarse en los países que
+                    mantienen
+                    convenios
+                    de reciprocidad, excepto Brasil que no lo tiene.</p>
             </div>
             <form>
                 <fieldset>
@@ -144,6 +162,10 @@
         </footer>
     </div>
 
+    <!--link de js bs-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
+        crossorigin="anonymous"></script>
 </body>
 
 </html>

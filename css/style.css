@@ -7,7 +7,7 @@
 
 /*ESTILOS html*/
 
-
+/*
 .contenedor{
 
     height: 100vh;
@@ -68,7 +68,21 @@ nav ul li a{
     text-decoration: none;
     color: whitesmoke;
 }
+*/
 
+/*Estilos de mi menu*/
+
+.nav-background{
+    background-color:#4682B4;
+}
+
+.titulo{
+    text-align: center;
+    margin: 8px;
+    font-size: 50px;
+    text-decoration: underline;
+    padding: 2px;
+}
 
 
 main{
@@ -96,7 +110,7 @@ main{
 form{
     margin: 20px;
     padding: 10px;
-    background-color: rgba(0, 0, 255, 0.5);
+    background-color: #4682B4;
     color:black; 
     border: 10px solid ;   
 }
@@ -169,6 +183,10 @@ form div {
 
 }
 
+body{
+    background-color:#8f8d8d;
+}
+
 
 
 footer{
@@ -219,9 +237,10 @@ footer p{
 
 
 .mainCursos{
-    height: 150vh;
+    height: 300vh;
     gap: 20px 30px;
     justify-items: center;
+   
     
 
     display: grid;
@@ -234,15 +253,20 @@ footer p{
                         "curso4";
 }
 
+
+
 .mainCursos ul, li{
     text-decoration: dashed;
     list-style-type: none;
     margin: 0.3em;
+    
+    
 }
 
 .mainCursos ul h3{
     text-align: center;
     text-decoration: underline;
+    
 }
 
 
@@ -259,6 +283,7 @@ footer p{
 .curso1{
     grid-area: curso1;
     width: 100%;
+    border: 2px solid black;
 
 }
 
@@ -266,6 +291,7 @@ footer p{
 .curso1 h2 {
     text-align: center;
     background-color: rgb(185, 184, 184);
+    
 }
 
 
@@ -273,6 +299,7 @@ footer p{
 .curso2{
     grid-area: curso2;
     width: 100%;
+    border: 2px solid black;
     
 
 }
@@ -287,6 +314,7 @@ footer p{
 .curso3{
     grid-area: curso3;
     width: 100%;
+    border: 2px solid black;
 
 }
 .curso3 h2 {
@@ -299,6 +327,7 @@ footer p{
 .curso4{
     grid-area: curso4;
     width: 100%;
+    border: 2px solid black;
 
 }
 .curso4 h2 {
@@ -312,7 +341,7 @@ footer p{
 /* ESTILOS DE NUESTRA FLOTA*/
 
 .flota{
-    height: 450vh;
+    height: 500vh;
     gap: 20px;
     justify-items: center;
     
@@ -413,6 +442,7 @@ footer p{
 
 .delta{
     transition: 2s;
+    width: 60%;
 }
 
 .delta:hover{
@@ -421,6 +451,7 @@ footer p{
 
 .golf{
     transition: 2s;
+    width: 60%;
 }
 
 .golf:hover{
@@ -429,6 +460,7 @@ footer p{
 
 .hotel{
     transition: 2s;
+    width: 60%;
 }
 
 .hotel:hover{
@@ -437,6 +469,7 @@ footer p{
 
 .bravo{
     transition: 2s;
+    width: 60%;
 }
 
 .bravo:hover{
@@ -445,6 +478,7 @@ footer p{
 
 .november{
     transition: 2s;
+    width: 60%;
 }
 
 .november:hover{
@@ -453,11 +487,17 @@ footer p{
 
 .julian{
     transition: 2s;
+    width: 60%;
 }
 
 .julian:hover{
     transform: scale(1.5);
 }
+
+
+/* ESTILOS DE PASEOS AEREOS CON BS */
+
+
 
 /*QUERY*/
 
@@ -487,7 +527,7 @@ footer p{
     
 
     .mainCursos{
-        height: 100vh;
+        height: 200vh;
         gap: 20px 30px;
         justify-items: center;
         
