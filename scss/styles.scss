@@ -1,0 +1,12 @@
+@import "utilities/variables";
+@import "header";
+@import "main";
+@import "contacto" ;
+@import "footer";
+@import "mediaqueries";
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}

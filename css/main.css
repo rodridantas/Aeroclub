@@ -1,0 +1,106 @@
+header .titulo {
+  text-align: center;
+  margin: 8px;
+  font-size: 50px;
+  text-decoration: underline;
+  padding: 2rem; }
+
+header div .nav-background {
+  background-color: #4682B4; }
+
+.menu {
+  background-color: #8f8d8d; }
+  .menu .parrafo {
+    display: none;
+    text-align: justify;
+    padding: 10rem; }
+  .menu .videos {
+    gap: 20px;
+    justify-items: center;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(3, 1fr);
+    grid-template-areas: "tituloVideo" "video1" "video2"; }
+    .menu .videos .tituloVideo {
+      grid-area: tituloVideo;
+      height: 10vh;
+      margin: 0.5em;
+      text-align: center;
+      font-size: 40px;
+      background-color: #b9b8b8; }
+    .menu .videos .video1 {
+      grid-area: video1;
+      height: 70vh;
+      width: 100%;
+      justify-content: center; }
+    .menu .videos .video2 {
+      grid-area: video2;
+      width: 100%;
+      height: 70vh;
+      justify-content: center; }
+  .menu div .wsp {
+    position: fixed;
+    width: 80px;
+    height: 80px;
+    bottom: 0;
+    right: 0; }
+
+form {
+  margin: 20px;
+  padding: 10px;
+  background-color: #4682b4;
+  color: black;
+  border: 10px solid; }
+  form fieldset {
+    border: 5px dashed; }
+    form fieldset .pilot {
+      text-align: center;
+      font-size: 1.5em; }
+    form fieldset div {
+      margin: 1rem;
+      font-size: 1em; }
+    form fieldset .botonEnvio {
+      margin-left: 5rem;
+      padding: 2rem;
+      text-align: right; }
+
+footer {
+  grid-area: footer;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background-color: darkgrey;
+  padding: 10px;
+  margin-top: 200px;
+  height: 30vh;
+  flex-wrap: wrap; }
+  footer h3 {
+    margin: 10px;
+    text-align: center; }
+  footer h4 {
+    margin: 10px;
+    text-align: center; }
+  footer p {
+    margin: 5px;
+    text-align: center;
+    font-size: 17px; }
+
+@media screen and (min-width: 720px) {
+  .menu .parrafo {
+    display: block;
+    justify-content: center;
+    padding: 10px;
+    flex-flow: wrap; }
+  .menu .videos {
+    gap: 2rem;
+    justify-items: center;
+    margin: 1rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: repeat(2, 1fr);
+    grid-template-areas: "tituloVideo tituloVideo" "video1 video2"; } }
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }

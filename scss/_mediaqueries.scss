@@ -1,0 +1,24 @@
+@media screen and (min-width: 720px) {
+  .menu {
+    .parrafo {
+      display: block;
+      justify-content: center;
+      padding: 10px;
+      flex-flow: wrap;
+    }
+
+      .videos {
+        gap: 2rem;
+        justify-items: center;
+        margin: 1rem;
+
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: repeat(2, 1fr);
+        grid-template-areas:
+          "tituloVideo tituloVideo"
+          "video1 video2";
+      }
+    }
+  }
+

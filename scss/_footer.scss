@@ -1,0 +1,31 @@
+footer{
+    grid-area: footer;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: $color-footer;
+    padding: 10px;
+    margin-top: 200px;
+    height: 30vh;
+    flex-wrap: wrap;
+
+    h3{
+        margin: 10px;
+        text-align: center;
+    }
+
+
+    h4{
+        margin: 10px;
+        text-align: center;
+    }
+
+
+    p{
+        margin: 5px;
+        text-align: center;
+        font-size: 17px;
+    }
+
+}

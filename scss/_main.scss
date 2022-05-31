@@ -1,0 +1,57 @@
+.menu {
+  background-color: $color-body;
+  .parrafo {
+    display: none;
+    text-align: justify;
+    padding: 10rem;
+  }
+  
+  .videos {
+    gap: 20px;
+    justify-items: center;
+
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(3, 1fr);
+    grid-template-areas:
+      "tituloVideo"
+      "video1"
+      "video2";
+
+    .tituloVideo {
+      grid-area: tituloVideo;
+      height: 10vh;
+      margin: 0.5em;
+      text-align: center;
+      font-size: 40px;
+      background-color: rgb(185, 184, 184);
+    }
+
+    .video1 {
+      grid-area: video1;
+      height: 70vh;
+      width: 100%;
+      justify-content: center;
+      
+    }
+
+    .video2 {
+      grid-area: video2;
+      width: 100%;
+      height: 70vh;
+      justify-content: center;
+    }
+  }
+  div{
+  .wsp {
+    position: fixed;
+    width: 80px;
+    height: 80px;
+    bottom: 0;
+    right: 0;
+  }
+}
+
+ 
+}
+
