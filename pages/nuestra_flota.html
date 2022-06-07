@@ -6,6 +6,14 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+    <meta name="description="
+        content="En la web oficial del Aeroclub de Mar del Plata podras ver los aviones con los que cuenta la escula de vuelo del aeroclub para realizar los cursos.">
+
+    <!--palabras claves-->
+    <meta name="keywords"
+        content="aviones en mar del plata, volar en mar del plata,aviones para comenzar como piloto,flota de aviones en mar del plata "
+        ;>
+
     <!--link de bs-->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
@@ -20,37 +28,38 @@
     <div class="conteiner">
         <header class="row">
 
-            <nav class="navbar navbar-expand-lg nav-background text-center col-12">
-                <div class="container">
-                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-                        data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
-                        aria-expanded="false" aria-label="Toggle navigation">
-                        <span class="navbar-toggler-icon"></span>
-                    </button>
-                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                            <li class="nav-item">
-                                <a class="nav-link" aria-current="page" href="../index.html">Inicio</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="cursos.html">Cursos</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link active" href="nuestra_flota.html">Nuestra flota</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link " href="paseos_aereos.html">Paseos aereos</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="contacto.html">Contacto</a>
-                            </li>
-                        </ul>
+            <div>
+                <nav class="navbar navbar-expand-lg nav-background text-center col-12">
+                    <div class="container">
+                        <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                            aria-expanded="false" aria-label="Toggle navigation">
+                            <span class="navbar-toggler-icon"></span>
+                        </button>
+                        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                            <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
+                                
+                                <li class="nav-item">
+                                    <a class="nav-link" href="cursos.html">Cursos</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link active" href="nuestra_flota.html">Nuestra flota</a>
+                                </li>
+                                <a class="navbar-brand" href="../index.html"><img width="120" height="80" src="../img/logo-aero.png" alt="Logo escuela del aeroclub "></a>
+                                <li class="nav-item">
+                                    <a class="nav-link " href="paseos_aereos.html">Paseos aereos</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="contacto.html">Contacto</a>
+                                </li>
+                            </ul>
+                        </div>
                     </div>
-                </div>
-            </nav>
+                </nav>
+            </div>
             <div class="row">
 
-                <h1><img class="imagen" width="120" height="90" src="../img/logo.png" alt="Logo del aeroclub">Nuestra
+                <h1><img class="imagen" width="120" height="90" src="../img/logo-escuela.png" alt="Logo del aeroclub">Nuestra
                     flota
                 </h1>
             </div>
@@ -61,102 +70,113 @@
 
         <main>
             <div class="flota">
-                <p class="aviones"> Contamos con aviones para la instrucción básica, como también para la instrucción
+                <p class="p-aviones"> Contamos con aviones para la instrucción básica, como también para la instrucción
                     avanzada.</p>
 
-                <ul>
-                    <li>
+                <ul class="grid-container">
+                    <li class="grid-150">
                         <p class="cessna">4 aviones Cessna 150</p>
-                        <ul>
+                        <ul class="cientocincuenta">
+                            
                             <div class="lld">
-                                <li>
-                                    <p><strong>Matricula: </strong> LV-LLD</p>
-                                </li>
+
                                 <li>
                                     <p><strong>Foto: </p>
                                     </strong> <img class="delta" width="450" height="380" src="../img/delta.jpg"
                                         alt="Avion Cessna 150 LV-LLD">
                                 </li>
+                                <li>
+                                    <p><strong>Matricula: </strong> LV-LLD</p>
+                                </li>
                             </div>
 
                             <div class="bpg">
-                                <li>
-                                    <p><strong>Matricula: </strong> LV-BPG</p>
-                                </li>
-
                                 <li>
                                     <p><strong>Foto: </p>
                                     </strong> <img class="golf" width="450" height="380" src="../img/golf.jpg"
                                         alt="Avion Cessna 150 LV-BPG">
                                 </li>
+                                <li>
+                                    <p><strong>Matricula: </strong> LV-BPG</p>
+                                </li>
                             </div>
 
                             <div class="clh">
-                                <li>
-                                    <p><strong>Matricula: </strong> LV-CLH</p>
-                                </li>
 
                                 <li>
                                     <p><strong>Foto: </p>
                                     </strong> <img class="hotel" width="450" height="380" src="../img/hotel.jpg"
                                         alt="Avion Cessna 150 LV-CLH">
                                 </li>
+                                <li>
+                                    <p><strong>Matricula: </strong> LV-CLH</p>
+                                </li>
                             </div>
 
                             <div class="fcb">
-                                <li>
-                                    <p><strong>Matricula: </strong> LV-FCB</p>
-                                </li>
 
                                 <li>
                                     <p><strong>Foto: </p>
                                     </strong> <img class="bravo" width="450" height="380" src="../img/charlybravo.jpg"
                                         alt="Avion Cessna 150 LV-FCB">
                                 </li>
+                                <li>
+                                    <p><strong>Matricula: </strong> LV-FCB</p>
+                                </li>
                             </div>
                         </ul>
                     </li>
 
 
-                    <li>
-                        <div class="gnz">
-                            <p class="cessna72">1 avion Cessna 172</p>
-                            <ul>
-                                <li>
-                                    <p><strong>Matricula: </strong> LV-GNZ</p>
-                                </li>
+                    <li class="grid-172">
+
+                        <p class="cessna72">1 avion Cessna 172</p>
+                        <ul>
+                            <div class="gnz">
                                 <li>
                                     <p><strong>Foto: </p>
                                     </strong> <img class="november" width="450" height="380" src="../img/november.jpg"
                                         alt="Avion Cessna 172 LV-GNZ">
                                 </li>
-                            </ul>
-                        </div>
-
+                                <li>
+                                    <p><strong>Matricula: </strong> LV-GNZ</p>
+                                </li>
+                            </div>
+                        </ul>
                     </li>
 
-                    <div class="pa11">
-                        <li>
-                            <p class="pipper">1 avion Piper PA 11</p>
-                            <ul>
-                                <li>
-                                    <p><strong>Matricula: </strong> LV-YJI</p>
-                                </li>
+
+
+                    <li class="grid-pa11">
+                        <p class="pipper">1 avion Piper PA 11</p>
+                        <ul>
+                            <div class="pa11">
                                 <li>
                                     <p><strong>Foto: </p>
                                     </strong> <img class="julian" width="450" height="380" src="../img/julian.jpg"
                                         alt="Avion Piper PA11 LV-GNZ">
                                 </li>
-                            </ul>
+                                <li>
+                                    <p><strong>Matricula: </strong> LV-YJI</p>
+                                </li>
+                            </div>
+                        </ul>
 
-                        </li>
-                    </div>
+                    </li>
                 </ul>
             </div>
         </main>
         <footer>
             <h3> Todos los derechos reservados</h3>
-            <h4> Seguinos en nuestras redes </h4>
+
+            <div>
+                <h4> Seguinos en nuestras redes</h4>
+                <a href="https://www.facebook.com/search/top?q=aeroclub%20mar%20del%20plata%20batan"
+                    target="_blank"><img width="40" height="40" src="../img/logoFace.png" alt="Logo de facebook"></a>
+                <a href="https://www.instagram.com/aeroclubmardelplata/" target="_blank"><img width="40" height="40"
+                        src="../img/intaLogo.png" alt="Logo de instagram"></a>
+            </div>
+
             <p>Pagina diseñada por Rodrigo Dantas</p>
             <p>Telefono de contacto: 223-4259449</p>
         </footer>

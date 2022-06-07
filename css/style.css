@@ -1,8 +1,7 @@
-
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 /*ESTILOS html*/
@@ -72,29 +71,26 @@ nav ul li a{
 
 /*Estilos de mi menu*/
 
-.nav-background{
-    background-color:#4682B4;
+.nav-background {
+  background-color: #4682b4;
 }
 
-.titulo{
-    text-align: center;
-    margin: 8px;
-    font-size: 50px;
-    text-decoration: underline;
-    padding: 2px;
+.titulo {
+  text-align: center;
+  margin: 8px;
+  font-size: 50px;
+  text-decoration: underline;
+  padding: 2px;
 }
 
-
-main{
-    grid-area: main;
+main {
+  grid-area: main;
 }
 
-
-.parrafo{
-    display: none;
-    text-align: justify;
-    padding: 10px;
-
+.parrafo {
+  display: none;
+  text-align: justify;
+  padding: 10px;
 }
 /*
 .menu div h2{
@@ -107,470 +103,449 @@ main{
 }
 */
 
-form{
-    margin: 20px;
-    padding: 10px;
-    background-color: #4682B4;
-    color:black; 
-    border: 10px solid ;   
+form {
+  margin: 20px;
+  padding: 10px;
+  background-color: #4682b4;
+  color: black;
+  border: 10px solid;
 }
 
-form fieldset{
-    border: 5px dashed;
+form fieldset {
+  border: 5px dashed;
 }
 
-.pilot{
-    text-align: center;
-    font-size: 1.5em;
+.pilot {
+  text-align: center;
+  font-size: 1.5em;
 }
 
 form div {
-    margin: 10px;
-    font-size: 1em;
-
+  margin: 10px;
+  font-size: 1em;
 }
 
-.videos{
+.videos {
+  gap: 20px;
+  justify-items: center;
 
-    gap: 20px;
-    justify-items: center;
-
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: repeat(3, 1fr);
-    grid-template-areas:"tituloVideo"
-                        "video1"
-                        "video2";
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: repeat(3, 1fr);
+  grid-template-areas:
+    "tituloVideo"
+    "video1"
+    "video2";
 }
 
-
-.tituloVideo{
-    grid-area: tituloVideo;
-    height: 10vh;
-    margin-top: 2em;
-    text-align: center;
-    font-size: 40px;
-    background-color: rgb(185, 184, 184);
+.tituloVideo {
+  grid-area: tituloVideo;
+  height: 10vh;
+  margin-top: 2em;
+  text-align: center;
+  font-size: 40px;
+  background-color: rgb(185, 184, 184);
 }
 
-.video1{
-    grid-area: video1;
-    justify-content: center;
-    width: 100%;
+.video1 {
+  grid-area: video1;
+  justify-content: center;
+  width: 100%;
 }
 
-.video2{
-    grid-area: video2;
-    width: 100%;
-    
+.video2 {
+  grid-area: video2;
+  width: 100%;
 }
 
 .botonEnvio {
-    margin: 15px;   
-    padding: 20px;
-    text-align: right;   
+  margin: 15px;
+  padding: 20px;
+  text-align: right;
 }
 
-
-
-
-.wsp{
-    position:fixed;
-    width: 80px;
-    height: 80px;
-    bottom: 0;
-    right: 0;
-
+.wsp {
+  position: fixed;
+  width: 80px;
+  height: 80px;
+  bottom: 0;
+  right: 0;
 }
 
-body{
-    background-color:#8f8d8d;
+body {
+  background-color: #8f8d8d;
 }
 
+footer {
+  grid-area: footer;
 
-
-footer{
-    grid-area: footer;
-
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    background-color: darkgrey;
-    padding: 10px;
-    margin-top: 200px;
-    height: 30vh;
-    flex-wrap: wrap;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background-color: darkgrey;
+  padding: 10px;
+  margin-top: 200px;
+  height: 30vh;
+  flex-wrap: wrap;
 }
 
-
-footer h3, h4{
-    margin: 10px;
-    text-align: center;
+footer h3,
+h4 {
+  margin: 10px;
+  text-align: center;
 }
 
-footer p{
-    margin: 5px;
-    text-align: center;
-    font-size: 17px;
+footer p {
+  margin: 5px;
+  text-align: center;
+  font-size: 17px;
 }
-
-
-
-
-
 
 /*estilos de cursos*/
 
-.imagen{
-    transition: 10s;
-    
+.imagen {
+  transition: 10s;
 }
-.imagen:hover{
-    transform: rotate(360deg);
-}
-
-.cursosTitulo{
-    margin: 50px;
-    font-size: 2em;
+.imagen:hover {
+  transform: rotate(360deg);
 }
 
-
-
-.mainCursos{
-    height: 300vh;
-    gap: 20px 30px;
-    justify-items: center;
-   
-    
-
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: repeat(5, 0.3fr);
-    grid-template-areas:"cursosTitulo"
-                        "curso1"
-                        "curso2"
-                        "curso3"
-                        "curso4";
+.cursosTitulo {
+  margin: 50px;
+  font-size: 2em;
 }
 
+.mainCursos {
+  height: 280vh;
+  gap: 20px 30px;
+  justify-items: center;
+  margin: 1rem;
 
-
-.mainCursos ul, li{
-    text-decoration: dashed;
-    list-style-type: none;
-    margin: 0.3em;
-    
-    
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: repeat(4, 0.1fr);
+  grid-template-areas:
+    "curso1"
+    "curso2"
+    "curso3"
+    "curso4";
 }
 
-.mainCursos ul h3{
-    text-align: center;
-    text-decoration: underline;
-    
+.mainCursos ul,
+li {
+  text-decoration: dashed;
+  list-style-type: none;
+  margin: 0.3em;
 }
 
-
-
-.cursosTitulo{
-    grid-area: cursosTitulo;
-    padding: 15px;
-    justify-content: center;
-    font-size: 1.5em;
-    background-color: rgb(185, 184, 184);
-    margin-bottom: 15px;
+.mainCursos ul h3 {
+  text-align: center;
+  text-decoration: underline;
 }
 
-.curso1{
-    grid-area: curso1;
-    width: 100%;
-    border: 2px solid black;
-
+.cursosTitulo {
+  padding: 15px;
+  justify-content: center;
+  font-size: 1.5em;
+  background-color: rgb(185, 184, 184);
+  margin: 5rem;
 }
 
+.curso1 {
+  grid-area: curso1;
+  width: 100%;
+  border: 2px solid black;
+  margin: 2rem;
+}
 
 .curso1 h2 {
-    text-align: center;
-    background-color: rgb(185, 184, 184);
-    
+  text-align: center;
+  background-color: rgb(185, 184, 184);
 }
 
-
-
-.curso2{
-    grid-area: curso2;
-    width: 100%;
-    border: 2px solid black;
-    
-
+.curso2 {
+  grid-area: curso2;
+  width: 100%;
+  border: 2px solid black;
+  margin: 2rem;
 }
 
 .curso2 h2 {
-    text-align: center;
-    background-color: rgb(185, 184, 184);
+  text-align: center;
+  background-color: rgb(185, 184, 184);
 }
 
-
-
-.curso3{
-    grid-area: curso3;
-    width: 100%;
-    border: 2px solid black;
-
+.curso3 {
+  grid-area: curso3;
+  width: 100%;
+  border: 2px solid black;
+  margin: 2rem;
 }
 .curso3 h2 {
-    text-align: center;
-    background-color: rgb(185, 184, 184);
-    
+  text-align: center;
+  background-color: rgb(185, 184, 184);
 }
 
-
-.curso4{
-    grid-area: curso4;
-    width: 100%;
-    border: 2px solid black;
-
+.curso4 {
+  grid-area: curso4;
+  width: 100%;
+  border: 2px solid black;
+  margin: 2rem;
 }
 .curso4 h2 {
-    text-align: center;
-    background-color: rgb(185, 184, 184);
+  text-align: center;
+  background-color: rgb(185, 184, 184);
 }
-
-
-
 
 /* ESTILOS DE NUESTRA FLOTA*/
 
-.flota{
-    height: 500vh;
-    gap: 20px;
-    justify-items: center;
-    
-
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: repeat(10, 1fr);
-    grid-template-areas:"aviones"
-                        "cessna"
-                        "lld"
-                        "bpg"
-                        "clh"
-                        "fcb"
-                        "cessna72"
-                        "gnz"
-                        "pipper"
-                        "pa11";
-                         
-}
-.flota ul li{
-    text-decoration: none;
-    list-style-type: none;
-    text-align: center;
+.p-aviones {
+  margin: 20px;
+  text-align: center;
+  text-decoration: none;
+  font-size: 1.5em;
+  background-color: rgb(185, 184, 184);
+  margin-bottom: 15px;
 }
 
+.grid-container {
+  height: 600vh;
+  gap: 1rem;
+  justify-items: center;
 
-.aviones{
-    grid-area: aviones;
-    margin: 20px;
-    text-align: center;
-    text-decoration: none;
-    font-size: 1.5em;
-    background-color: rgb(185, 184, 184);
-    margin-bottom: 15px;
-
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: repeat(9, 1fr);
+  grid-template-areas:
+    "cessna"
+    "lld"
+    "bpg"
+    "clh"
+    "fcb"
+    "cessna72"
+    "gnz"
+    "pipper"
+    "pa11";
 }
 
-.cessna{
-    grid-area: cessna;
-    text-align: center;
-    text-decoration: none;
-    font-size: 2em;
-    background-color: rgb(185, 184, 184);
-    margin-bottom: 15px;
+.flota ul li {
+  text-decoration: none;
+  list-style-type: none;
+  text-align: center;
 }
 
-.lld{
-    grid-area: lld;
-    width: 100%;
-    
+.cessna {
+  grid-area: cessna;
+  margin: 3rem;
+  padding: 0.5rem;
+  text-align: center;
+  text-decoration: none;
+  font-size: 2em;
+  background-color: rgb(185, 184, 184);
 }
 
-.bpg{
-    grid-area: bpg;
-    width: 100%;
+.lld {
+  grid-area: lld;
+  width: 100%;
+  margin-bottom: 3rem;
+  border: 0.3rem solid black;
 }
 
-.clh{
-    grid-area: clh;
-    width: 100%;
+.bpg {
+  grid-area: bpg;
+  width: 100%;
+  margin-bottom: 3rem;
+  border: 0.3rem solid black;
 }
 
-.fcb{
-    grid-area: fcb;
-    width: 100%;
+.clh {
+  grid-area: clh;
+  width: 100%;
+  margin-bottom: 3rem;
+  border: 0.3rem solid black;
 }
 
-.cessna72{
-    grid-area: 72;
-    text-align: center;
-    text-decoration: none;
-    font-size: 2em;
-    background-color: rgb(185, 184, 184);
-    margin: 25px;
-    width: 100%;
+.fcb {
+  grid-area: fcb;
+  width: 100%;
+  margin-bottom: 3rem;
+  border: 0.3rem solid black;
 }
 
-.gnz{
-    grid-area: gnz;
-    width: 100%;
+.cessna72 {
+  grid-area: cessna72;
+  text-align: center;
+  text-decoration: none;
+  font-size: 2em;
+  background-color: rgb(185, 184, 184);
+  margin: 3rem;
+  padding: 0.5rem;
 }
 
-.pipper{
-    grid-area: pipper;
-    text-align: center;
-    text-decoration: none;
-    font-size: 2em;
-    background-color: rgb(185, 184, 184);
-    margin: 25px;
-    width: 100%;
+.gnz {
+  grid-area: gnz;
+  width: 100%;
+  margin-bottom: 3rem;
+  border: 0.3rem solid black;
 }
 
-.pa11{
-    grid-area: pa11;
-    width: 100%;
+.pipper {
+  grid-area: pipper;
+  text-align: center;
+  text-decoration: none;
+  font-size: 2em;
+  background-color: rgb(185, 184, 184);
+  margin: 1rem;
+  padding: 0.5rem;
 }
 
-
-.delta{
-    transition: 2s;
-    width: 60%;
+.pa11 {
+  grid-area: pa11;
+  width: 100%;
+  margin-bottom: 3rem;
+  border: 0.3rem solid black;
 }
 
-.delta:hover{
-    transform: scale(1.5);
+.delta {
+  transition: 2s;
+  width: 60%;
 }
 
-.golf{
-    transition: 2s;
-    width: 60%;
+.delta:hover {
+  transform: scale(1.5);
 }
 
-.golf:hover{
-    transform: scale(1.5);
+.golf {
+  transition: 2s;
+  width: 60%;
 }
 
-.hotel{
-    transition: 2s;
-    width: 60%;
+.golf:hover {
+  transform: scale(1.5);
 }
 
-.hotel:hover{
-    transform: scale(1.5);
+.hotel {
+  transition: 2s;
+  width: 60%;
 }
 
-.bravo{
-    transition: 2s;
-    width: 60%;
+.hotel:hover {
+  transform: scale(1.5);
 }
 
-.bravo:hover{
-    transform: scale(1.5);
+.bravo {
+  transition: 2s;
+  width: 60%;
 }
 
-.november{
-    transition: 2s;
-    width: 60%;
+.bravo:hover {
+  transform: scale(1.5);
 }
 
-.november:hover{
-    transform: scale(1.5);
+.november {
+  transition: 2s;
+  width: 60%;
 }
 
-.julian{
-    transition: 2s;
-    width: 60%;
+.november:hover {
+  transform: scale(1.5);
 }
 
-.julian:hover{
-    transform: scale(1.5);
+.julian {
+  transition: 2s;
+  width: 60%;
 }
 
+.julian:hover {
+  transform: scale(1.5);
+}
 
 /* ESTILOS DE PASEOS AEREOS CON BS */
 
-
-
 /*QUERY*/
 
-
-
 @media screen and (min-width: 720px) {
+  .parrafo {
+    display: block;
+    justify-content: center;
+    padding: 10px;
+    flex-flow: wrap;
+  }
 
-    .parrafo{
-        display: block;
-        justify-content: center;
-        padding: 10px;
-        flex-flow: wrap;
-    
-    }
+  .videos {
+    gap: 20px;
+    justify-items: center;
 
-    .videos{
-        gap: 20px;
-        justify-items: center;
-    
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-        grid-template-rows: repeat(2, 1fr);
-        grid-template-areas:"tituloVideo tituloVideo"
-                            "video1 video2";
-    }
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: repeat(2, 1fr);
+    grid-template-areas:
+      "tituloVideo tituloVideo"
+      "video1 video2";
+  }
 
-    
+  .mainCursos {
+    height: 250vh;
+    gap: 20px 30px;
+    justify-items: center;
 
-    .mainCursos{
-        height: 200vh;
-        gap: 20px 30px;
-        justify-items: center;
-        
-    
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-        grid-template-rows: repeat(3, 0.3fr);
-        grid-template-areas:"cursosTitulo cursosTitulo"
-                            "curso1 curso2"
-                            "curso3 curso4";
-    }
-
-/*PROFE SE ME COMPLICO ACA PARA PONER EN EL HTML "NUESTRA FLOTA" EN UNA COLUMNA DOS AVIONES NOSE SI ES POR LA IMAGEN DEL AVION QUE NO ME FUNCIONA ME PODES DAR UNA MANO? GRACIAS!!!!!!!
-*/
-
-
-    .flota{
-        
-        width: 100%;
-        gap: 20px;
-        justify-items: center;
-        
-    
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-        grid-template-rows: repeat(8, 0.3fr);
-        grid-template-areas:"aviones aviones"
-                            "cessna cessna"
-                            "lld bpg"
-                            "clh fcb"
-                            "cessna72 cessna72"
-                            "gnz gnz"
-                            "pipper pipper"
-                            "pa11 pa11";
-                             
-    }
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: repeat(2, 0.3fr);
+    grid-template-areas:
+      "curso1 curso2"
+      "curso3 curso4";
+  }
 
 
 
+  
 
-   
-}
+  .cientocincuenta{
+    height: 200vh;
+    gap: 4rem;
+    justify-items: center;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: repeat(4, 0.3fr);
+    grid-template-areas:
+    "lld bpg"
+    "clh fcb"
+     
+  }
 
+
+  .grid-172{
+    height: 150vh;
+    gap: 1rem;
+    justify-items: center;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(1, 0.3fr);
+    grid-template-areas:
+    "cessna72"
+    "gnz"
+  }
+
+
+  .grid-pa11{
+    height: 120vh;
+    gap: 1rem;
+    justify-items: center;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(1, 0.3fr);
+    grid-template-areas:
+    "pipper"
+    "pa11"
+  }
+  }
+
+ 
+
+ 
+
+  
 
 
 

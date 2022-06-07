@@ -11,13 +11,8 @@
         gap: 2rem;
         justify-items: center;
         margin: 1rem;
-
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-        grid-template-rows: repeat(2, 1fr);
-        grid-template-areas:
-          "tituloVideo tituloVideo"
-          "video1 video2";
+        @include grid(grid, 1fr 1fr, repeat(2, 1fr),"tituloVideo tituloVideo"
+        "video1 video2");
       }
     }
   }
