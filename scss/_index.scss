@@ -9,7 +9,7 @@
   .videos {
     gap: 20px;
     justify-items: center;
-    height: 70rem;
+    height: 50rem;
     @include grid(grid, 1fr, repeat(3, 1fr), "tituloVideo"
     "video1"
     "video2");
@@ -18,7 +18,7 @@
 
     .tituloVideo {
       grid-area: tituloVideo;
-      height: 5rem;
+      height: 3rem;
       margin: 0.5rem;
       text-align: center;
       font-size: 40px;
@@ -27,10 +27,10 @@
 
     .video1 {
       grid-area: video1;
-      height: 20rem;
+      height: 25rem;
       margin:0.5rem;
       justify-content: center;
-      
+      width: 100%;
     }
 
     .video2 {

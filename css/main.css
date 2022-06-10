@@ -66,23 +66,24 @@ body {
 .conteiner .menu .videos {
   gap: 20px;
   justify-items: center;
-  height: 70rem;
+  height: 50rem;
   display: grid;
   grid-template-columns: 1fr;
   grid-template-rows: repeat(3, 1fr);
   grid-template-areas: "tituloVideo" "video1" "video2"; }
   .conteiner .menu .videos .tituloVideo {
     grid-area: tituloVideo;
-    height: 5rem;
+    height: 3rem;
     margin: 0.5rem;
     text-align: center;
     font-size: 40px;
     background-color: #b9b8b8; }
   .conteiner .menu .videos .video1, .conteiner .menu .videos .video2 {
     grid-area: video1;
-    height: 20rem;
+    height: 25rem;
     margin: 0.5rem;
-    justify-content: center; }
+    justify-content: center;
+    width: 100%; }
   .conteiner .menu .videos .video2 {
     grid-area: video2; }
 
