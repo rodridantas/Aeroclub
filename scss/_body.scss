@@ -1,0 +1,38 @@
+body{
+  background-color: $color-body;
+}
+
+.conteiner {
+  
+
+  display: grid;
+
+  height: 100vh;
+  grid-template-areas: "header"
+                        "main"
+                        "footer";
+
+  header {
+    grid-area: header;
+    background-color: #b9b3b3;
+    width: 100%;
+    height:auto;
+    
+  }
+  main {
+    grid-area: main;
+    height: auto;
+    width: 100%;
+    
+  }
+
+  footer{
+  background-color: $color-footer;
+    grid-area: footer;
+    height: auto;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    padding: 1rem;
+}
+}

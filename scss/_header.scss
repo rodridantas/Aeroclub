@@ -1,24 +1,49 @@
-header{
-    background-color: #b9b3b3;
-    .titulo{
-        background-color:$color-header;
-        text-align: center;
-        font-size: 50px;
-        text-decoration: underline;
-        padding: 2rem;
+.conteiner {
+  header {
+    .titulo {
+      background-color: $color-header;
+      text-align: center;
+      height: 15rem;
+      font-size: 50px;
+      text-decoration: underline;
+      padding: 2rem;
     }
 
-    div{
-        .nav-background{
-            background-color:$color-menu;
+    div {
+      .navbar {
+        font-size: 1.4rem;
+        .container {
+          div {
+            .navbar-nav {
+              .nav-item {
+                margin: 2rem;
+                .rotate {
+                  animation: rotation 10s linear;
+                }
+
+                @keyframes rotation {
+                  from {
+                    transform: rotate(0deg);
+                  }
+                  to {
+                    transform: rotate(359deg);
+                  }
+                }
+              }
+            }
+          }
         }
+      }
+      .nav-background {
+        background-color: $color-menu;
+      }
 
-        .imagen{
-            transition: 10s;
-          }
-          .imagen:hover {
-            transform: rotate(360deg);
-          }
+      .imagen {
+        transition: 10s;
+      }
+      .imagen:hover {
+        transform: rotate(360deg);
+      }
     }
-
+  }
 }

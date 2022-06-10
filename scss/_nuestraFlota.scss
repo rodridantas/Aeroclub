@@ -1,0 +1,141 @@
+.conteiner{
+  .flota {
+    .p-aviones {
+      margin: 3rem;
+      text-align: center;
+      text-decoration: none;
+      font-size: 1.5em;
+      background-color: rgb(185, 184, 184);
+    }
+    ul {
+      li {
+        list-style-type: none;
+      }
+    }
+
+    .grid-container {
+      height: 250rem;
+      gap: 1rem;
+      justify-items: center;
+
+      @include grid(
+        grid,
+        1fr,
+        repeat(9, 1fr),
+        "cessna" "lld" "bpg" "clh" "fcb" "cessna72" "gnz" "pipper" "pa11"
+      );
+
+      ul {
+        li {
+          text-decoration: none;
+          list-style-type: none;
+          text-align: center;
+        }
+      }
+      .cessna {
+        grid-area: cessna;
+        list-style-type: none;
+        margin: 3rem;
+        padding: 0.5rem;
+        text-align: center;
+        text-decoration: none;
+        font-size: 2em;
+        background-color: rgb(185, 184, 184);
+      }
+      ul {
+        .lld {
+          grid-area: lld;
+
+          width: 100%;
+          height: auto;
+          margin-bottom: 3rem;
+          border: 0.3rem solid black;
+
+          .delta {
+            transition: 2s;
+            width: 60%;
+          }
+
+          .delta:hover {
+            transform: scale(1.5);
+          }
+        }
+
+        .bpg {
+          @extend .lld;
+          grid-area: bpg;
+          .golf {
+            transition: 2s;
+            width: 60%;
+          }
+
+          .golf:hover {
+            transform: scale(1.5);
+          }
+        }
+
+        .clh {
+          @extend .lld;
+          grid-area: clh;
+          .hotel{
+            transition: 2s;
+            width: 60%;
+          }
+          .hotel:hover{
+            transform: scale(1.5);
+          }
+
+         
+        }
+
+        .fcb {
+          @extend .lld;
+          grid-area: fcb;
+            
+          .bravo {
+            transition: 2s;
+            width: 60%;
+          }
+          
+          .bravo:hover {
+            transform: scale(1.5);
+          }
+        }
+        .gnz {
+          @extend .lld;
+          grid-area: gnz;
+
+          .november {
+            transition: 2s;
+            width: 60%;
+          }
+          
+          .november:hover {
+            transform: scale(1.5);
+          }
+        }
+        .pa11 {
+          @extend .lld;
+          grid-area: pa11;
+
+          .julian {
+            transition: 2s;
+            width: 60%;
+          }
+          
+          .julian:hover {
+            transform: scale(1.5);
+          }
+        }
+      }
+      .cessna72 {
+        @extend .cessna;
+        grid-area: cessna72;
+      }
+      .pipper {
+        @extend .cessna;
+        grid-area: pipper;
+      }
+    }
+  }
+}

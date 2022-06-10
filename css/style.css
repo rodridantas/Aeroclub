@@ -467,6 +467,7 @@ li {
 @media screen and (min-width: 720px) {
   .parrafo {
     display: block;
+    width: 2rem;
     justify-content: center;
     padding: 10px;
     flex-flow: wrap;

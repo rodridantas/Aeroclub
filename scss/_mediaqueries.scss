@@ -1,10 +1,12 @@
 @media screen and (min-width: 720px) {
+  .conteiner{
   .menu {
     .parrafo {
       display: block;
       justify-content: center;
       padding: 10px;
       flex-flow: wrap;
+
     }
 
       .videos {
@@ -17,3 +19,4 @@
     }
   }
 
+}

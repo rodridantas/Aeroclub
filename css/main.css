@@ -1,63 +1,105 @@
-header {
-  background-color: #b9b3b3; }
-  header .titulo {
-    background-color: #8f8d8d;
-    text-align: center;
-    font-size: 50px;
-    text-decoration: underline;
-    padding: 2rem; }
-  header div .nav-background {
-    background-color: #4682B4; }
-  header div .imagen {
-    transition: 10s; }
-  header div .imagen:hover {
-    transform: rotate(360deg); }
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }
 
 body {
   background-color: #8f8d8d; }
 
-.menu {
-  height: 250vh; }
-  .menu .parrafo {
-    display: none;
-    text-align: justify;
+.conteiner {
+  display: grid;
+  height: 100vh;
+  grid-template-areas: "header" "main" "footer"; }
+  .conteiner header {
+    grid-area: header;
+    background-color: #b9b3b3;
+    width: 100%;
+    height: auto; }
+  .conteiner main {
+    grid-area: main;
+    height: auto;
+    width: 100%; }
+  .conteiner footer {
+    background-color: darkgrey;
+    grid-area: footer;
+    height: auto;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
     padding: 1rem; }
-  .menu .videos {
-    gap: 20px;
-    justify-items: center;
-    height: 100vh;
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: repeat(3, 1fr);
-    grid-template-areas: "tituloVideo" "video1" "video2"; }
-    .menu .videos .tituloVideo {
-      grid-area: tituloVideo;
-      height: 10vh;
-      margin: 0.5em;
-      text-align: center;
-      font-size: 40px;
-      background-color: #b9b8b8; }
-    .menu .videos .video1, .menu .videos .video2 {
-      grid-area: video1;
-      height: 70vh;
-      width: 100%;
-      justify-content: center; }
-    .menu .videos .video2 {
-      grid-area: video2; }
-  .menu div .wsp {
-    position: fixed;
-    bottom: 0;
-    right: 0; }
 
-main .cursosTitulo {
+.conteiner header .titulo {
+  background-color: #8f8d8d;
+  text-align: center;
+  height: 15rem;
+  font-size: 50px;
+  text-decoration: underline;
+  padding: 2rem; }
+
+.conteiner header div .navbar {
+  font-size: 1.4rem; }
+  .conteiner header div .navbar .container div .navbar-nav .nav-item {
+    margin: 2rem; }
+    .conteiner header div .navbar .container div .navbar-nav .nav-item .rotate {
+      animation: rotation 10s linear; }
+
+@keyframes rotation {
+  from {
+    transform: rotate(0deg); }
+  to {
+    transform: rotate(359deg); } }
+
+.conteiner header div .nav-background {
+  background-color: #4682B4; }
+
+.conteiner header div .imagen {
+  transition: 10s; }
+
+.conteiner header div .imagen:hover {
+  transform: rotate(360deg); }
+
+.conteiner .menu .parrafo {
+  display: none;
+  text-align: justify;
+  padding: 1rem; }
+
+.conteiner .menu .videos {
+  gap: 20px;
+  justify-items: center;
+  height: 70rem;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: repeat(3, 1fr);
+  grid-template-areas: "tituloVideo" "video1" "video2"; }
+  .conteiner .menu .videos .tituloVideo {
+    grid-area: tituloVideo;
+    height: 5rem;
+    margin: 0.5rem;
+    text-align: center;
+    font-size: 40px;
+    background-color: #b9b8b8; }
+  .conteiner .menu .videos .video1, .conteiner .menu .videos .video2 {
+    grid-area: video1;
+    height: 20rem;
+    margin: 0.5rem;
+    justify-content: center; }
+  .conteiner .menu .videos .video2 {
+    grid-area: video2; }
+
+.conteiner .menu div .wsp {
+  position: fixed;
+  bottom: 0;
+  right: 0; }
+
+.conteiner main .cursosTitulo {
   padding: 15px;
   justify-content: center;
   font-size: 1.5em;
   background-color: #b9b8b8;
   margin: 5rem; }
 
-main .mainCursos {
-  height: 280vh;
+.conteiner main .mainCursos {
+  height: 120rem;
   gap: 20px 30px;
   justify-items: center;
   margin: 1rem;
@@ -66,27 +108,109 @@ main .mainCursos {
   grid-template-columns: 1fr;
   grid-template-rows: repeat(4, o 0.1fr);
   grid-template-areas: "curso1" "curso2" "curso3" "curso4"; }
-  main .mainCursos li ul li {
+  .conteiner main .mainCursos li ul li {
     text-decoration: dashed;
     list-style-type: none;
     margin: 0.3em; }
-  main .mainCursos li ul h3 {
+  .conteiner main .mainCursos li ul h3 {
     text-align: center;
     text-decoration: underline; }
-  main .mainCursos .curso1, main .mainCursos .curso2, main .mainCursos .curso3, main .mainCursos .curso4 {
+  .conteiner main .mainCursos .curso1, .conteiner main .mainCursos .curso2, .conteiner main .mainCursos .curso3, .conteiner main .mainCursos .curso4 {
     grid-area: curso1;
     width: 100%;
     border: 2px solid black;
     margin: 2rem; }
-    main .mainCursos .curso1 h2, main .mainCursos .curso2 h2, main .mainCursos .curso3 h2, main .mainCursos .curso4 h2 {
+    .conteiner main .mainCursos .curso1 h2, .conteiner main .mainCursos .curso2 h2, .conteiner main .mainCursos .curso3 h2, .conteiner main .mainCursos .curso4 h2 {
       text-align: center;
       background-color: #b9b8b8; }
-  main .mainCursos .curso2 {
+  .conteiner main .mainCursos .curso2 {
     grid-area: curso2; }
-  main .mainCursos .curso3 {
+  .conteiner main .mainCursos .curso3 {
     grid-area: curso3; }
-  main .mainCursos .curso4 {
+  .conteiner main .mainCursos .curso4 {
     grid-area: curso4; }
+
+.conteiner .flota .p-aviones {
+  margin: 3rem;
+  text-align: center;
+  text-decoration: none;
+  font-size: 1.5em;
+  background-color: #b9b8b8; }
+
+.conteiner .flota ul li {
+  list-style-type: none; }
+
+.conteiner .flota .grid-container {
+  height: 250rem;
+  gap: 1rem;
+  justify-items: center;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: repeat(9, 1fr);
+  grid-template-areas: "cessna" "lld" "bpg" "clh" "fcb" "cessna72" "gnz" "pipper" "pa11"; }
+  .conteiner .flota .grid-container ul li {
+    text-decoration: none;
+    list-style-type: none;
+    text-align: center; }
+  .conteiner .flota .grid-container .cessna, .conteiner .flota .grid-container .cessna72, .conteiner .flota .grid-container .pipper {
+    grid-area: cessna;
+    list-style-type: none;
+    margin: 3rem;
+    padding: 0.5rem;
+    text-align: center;
+    text-decoration: none;
+    font-size: 2em;
+    background-color: #b9b8b8; }
+  .conteiner .flota .grid-container ul .lld, .conteiner .flota .grid-container ul .bpg, .conteiner .flota .grid-container ul .clh, .conteiner .flota .grid-container ul .fcb, .conteiner .flota .grid-container ul .gnz, .conteiner .flota .grid-container ul .pa11 {
+    grid-area: lld;
+    width: 100%;
+    height: auto;
+    margin-bottom: 3rem;
+    border: 0.3rem solid black; }
+    .conteiner .flota .grid-container ul .lld .delta, .conteiner .flota .grid-container ul .bpg .delta, .conteiner .flota .grid-container ul .clh .delta, .conteiner .flota .grid-container ul .fcb .delta, .conteiner .flota .grid-container ul .gnz .delta, .conteiner .flota .grid-container ul .pa11 .delta {
+      transition: 2s;
+      width: 60%; }
+    .conteiner .flota .grid-container ul .lld .delta:hover, .conteiner .flota .grid-container ul .bpg .delta:hover, .conteiner .flota .grid-container ul .clh .delta:hover, .conteiner .flota .grid-container ul .fcb .delta:hover, .conteiner .flota .grid-container ul .gnz .delta:hover, .conteiner .flota .grid-container ul .pa11 .delta:hover {
+      transform: scale(1.5); }
+  .conteiner .flota .grid-container ul .bpg {
+    grid-area: bpg; }
+    .conteiner .flota .grid-container ul .bpg .golf {
+      transition: 2s;
+      width: 60%; }
+    .conteiner .flota .grid-container ul .bpg .golf:hover {
+      transform: scale(1.5); }
+  .conteiner .flota .grid-container ul .clh {
+    grid-area: clh; }
+    .conteiner .flota .grid-container ul .clh .hotel {
+      transition: 2s;
+      width: 60%; }
+    .conteiner .flota .grid-container ul .clh .hotel:hover {
+      transform: scale(1.5); }
+  .conteiner .flota .grid-container ul .fcb {
+    grid-area: fcb; }
+    .conteiner .flota .grid-container ul .fcb .bravo {
+      transition: 2s;
+      width: 60%; }
+    .conteiner .flota .grid-container ul .fcb .bravo:hover {
+      transform: scale(1.5); }
+  .conteiner .flota .grid-container ul .gnz {
+    grid-area: gnz; }
+    .conteiner .flota .grid-container ul .gnz .november {
+      transition: 2s;
+      width: 60%; }
+    .conteiner .flota .grid-container ul .gnz .november:hover {
+      transform: scale(1.5); }
+  .conteiner .flota .grid-container ul .pa11 {
+    grid-area: pa11; }
+    .conteiner .flota .grid-container ul .pa11 .julian {
+      transition: 2s;
+      width: 60%; }
+    .conteiner .flota .grid-container ul .pa11 .julian:hover {
+      transform: scale(1.5); }
+  .conteiner .flota .grid-container .cessna72 {
+    grid-area: cessna72; }
+  .conteiner .flota .grid-container .pipper {
+    grid-area: pipper; }
 
 form {
   margin: 20px;
@@ -107,36 +231,28 @@ form {
       padding: 2rem;
       text-align: right; }
 
-footer {
-  background-color: darkgrey;
-  grid-area: footer;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  padding: 10px;
-  margin-top: 200px;
-  height: 40vh;
-  flex-wrap: wrap; }
-  footer h3 {
-    margin: 10px;
+.conteiner footer h3 {
+  margin: 1rem;
+  text-align: center; }
+
+.conteiner footer div {
+  text-align: center; }
+  .conteiner footer div h4 {
+    margin: 1rem;
     text-align: center; }
-  footer div {
-    text-align: center; }
-    footer div h4 {
-      margin: 10px;
-      text-align: center; }
-  footer p {
-    margin: 5px;
-    text-align: center;
-    font-size: 17px; }
+
+.conteiner footer p {
+  margin: 1rem;
+  text-align: center;
+  font-size: 17px; }
 
 @media screen and (min-width: 720px) {
-  .menu .parrafo {
+  .conteiner .menu .parrafo {
     display: block;
     justify-content: center;
     padding: 10px;
     flex-flow: wrap; }
-  .menu .videos {
+  .conteiner .menu .videos {
     gap: 2rem;
     justify-items: center;
     margin: 1rem;
@@ -144,8 +260,3 @@ footer {
     grid-template-columns: 1fr 1fr;
     grid-template-rows: repeat(2, 1fr);
     grid-template-areas: "tituloVideo tituloVideo" "video1 video2"; } }
-
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box; }

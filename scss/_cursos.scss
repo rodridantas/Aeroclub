@@ -1,3 +1,4 @@
+.conteiner{
 main {
   .cursosTitulo {
     padding: 15px;
@@ -8,7 +9,7 @@ main {
   }
 
   .mainCursos {
-    height: 280vh;
+    height: 120rem;
     gap: 20px 30px;
     justify-items: center;
     margin: 1rem;
@@ -59,4 +60,5 @@ main {
       grid-area: curso4;
     }
   }
+}
 }
