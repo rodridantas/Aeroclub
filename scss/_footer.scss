@@ -1,26 +1,29 @@
 .conteiner{
 
 footer{
-    
+    @include color-font;
+  
 
-    h3{
-        margin: 1rem;
-        text-align: center;
-    }
+.redes{
+    text-align: center;
+    margin: 2rem;
 
-div{
+}
+.infoFooter{
     text-align: center;
     h4{
         margin: 1rem;
         text-align: center;
+        font-size: 1rem;
+    }
+    h5{
+        margin: 1rem;
+        text-align: center;
+        font-size: 1rem;
     }
 }
 
-    p{
-        margin: 1rem;
-        text-align: center;
-        font-size: 17px;
-    }
+  
 
 }
 }

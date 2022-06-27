@@ -4,3 +4,7 @@
     grid-template-rows: $rows;
     grid-template-areas:$areas;
 }
+
+@mixin color-font() {
+    font-family:'Kdam Thmor Pro', sans-serif;
+}

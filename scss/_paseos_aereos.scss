@@ -1,0 +1,57 @@
+.conteiner {
+  main {
+    .paseosAereos {
+      display: grid;
+      grid-template-areas:
+        "titulo-paseo"
+        "paseos"
+        "titulo-precio"
+        "listado-precios"
+        "pilotos-experiencia"
+        "video";
+
+      .titulo-paseo {
+        grid-area: titulo-paseo;
+        padding: 0.5rem;
+        text-align: center;
+        background-color: rgb(185, 184, 184);
+        margin: 5rem;
+        font-size: 1rem;
+      }
+      .paseos {
+        grid-area: paseos;
+        display: none;
+        text-align: justify;
+        padding: 1rem;
+      }
+      .titulo-precio{
+        grid-area: titulo-precio;
+      }
+      .listado-precios{
+        grid-area: listado-precios;
+      }
+     
+      .pilotos-experiencia {
+        grid-area: pilotos-experiencia;
+        text-align: center;
+        margin: 3rem;
+      }
+      .video {
+        grid-area: video;
+        text-align: center;
+        justify-content: center;
+        margin: 2rem;
+        height: 20rem;
+
+      
+      }
+      li{
+        list-style: none;
+        text-align: center;
+        margin: 3rem;
+      }
+
+    
+    }
+  }
+}

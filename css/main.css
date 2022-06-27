@@ -4,7 +4,8 @@
   box-sizing: border-box; }
 
 body {
-  background-color: #8f8d8d; }
+  background-color: #8f8d8d;
+  font-family: 'Kdam Thmor Pro', sans-serif; }
 
 .conteiner {
   display: grid;
@@ -32,12 +33,14 @@ body {
   background-color: #8f8d8d;
   text-align: center;
   height: 15rem;
-  font-size: 50px;
   text-decoration: underline;
-  padding: 2rem; }
+  padding: 2rem;
+  font-size: 55px;
+  color: #090942; }
 
 .conteiner header div .navbar {
-  font-size: 1.4rem; }
+  font-size: 1.5rem;
+  color: #090942; }
   .conteiner header div .navbar .container div .navbar-nav .nav-item {
     margin: 2rem; }
     .conteiner header div .navbar .container div .navbar-nav .nav-item .rotate {
@@ -64,9 +67,9 @@ body {
   padding: 1rem; }
 
 .conteiner .menu .videos {
-  gap: 20px;
+  margin: 1rem;
   justify-items: center;
-  height: 50rem;
+  height: 60rem;
   display: grid;
   grid-template-columns: 1fr;
   grid-template-rows: repeat(3, 1fr);
@@ -75,9 +78,9 @@ body {
     grid-area: tituloVideo;
     height: 3rem;
     margin: 0.5rem;
-    text-align: center;
     font-size: 40px;
-    background-color: #b9b8b8; }
+    background-color: #b9b8b8;
+    font-family: 'Kdam Thmor Pro', sans-serif; }
   .conteiner .menu .videos .video1, .conteiner .menu .videos .video2 {
     grid-area: video1;
     height: 25rem;
@@ -87,7 +90,7 @@ body {
   .conteiner .menu .videos .video2 {
     grid-area: video2; }
 
-.conteiner .menu div .wsp {
+.conteiner .menu .wsp {
   position: fixed;
   bottom: 0;
   right: 0; }
@@ -131,8 +134,42 @@ body {
   .conteiner main .mainCursos .curso4 {
     grid-area: curso4; }
 
+.conteiner main .paseosAereos {
+  display: grid;
+  grid-template-areas: "titulo-paseo" "paseos" "titulo-precio" "listado-precios" "pilotos-experiencia" "video"; }
+  .conteiner main .paseosAereos .titulo-paseo {
+    grid-area: titulo-paseo;
+    padding: 0.5rem;
+    text-align: center;
+    background-color: #b9b8b8;
+    margin: 5rem;
+    font-size: 1rem; }
+  .conteiner main .paseosAereos .paseos {
+    grid-area: paseos;
+    display: none;
+    text-align: justify;
+    padding: 1rem; }
+  .conteiner main .paseosAereos .titulo-precio {
+    grid-area: titulo-precio; }
+  .conteiner main .paseosAereos .listado-precios {
+    grid-area: listado-precios; }
+  .conteiner main .paseosAereos .pilotos-experiencia {
+    grid-area: pilotos-experiencia;
+    text-align: center;
+    margin: 3rem; }
+  .conteiner main .paseosAereos .video {
+    grid-area: video;
+    text-align: center;
+    justify-content: center;
+    margin: 2rem;
+    height: 20rem; }
+  .conteiner main .paseosAereos li {
+    list-style: none;
+    text-align: center;
+    margin: 3rem; }
+
 .conteiner .flota .p-aviones {
-  margin: 3rem;
+  margin: 6rem;
   text-align: center;
   text-decoration: none;
   font-size: 1.5em;
@@ -143,12 +180,8 @@ body {
 
 .conteiner .flota .grid-container {
   height: 250rem;
-  gap: 1rem;
-  justify-items: center;
-  display: grid;
-  grid-template-columns: 1fr;
-  grid-template-rows: repeat(9, 1fr);
-  grid-template-areas: "cessna" "lld" "bpg" "clh" "fcb" "cessna72" "gnz" "pipper" "pa11"; }
+  margin: 1rem;
+  justify-items: center; }
   .conteiner .flota .grid-container ul li {
     text-decoration: none;
     list-style-type: none;
@@ -156,7 +189,7 @@ body {
   .conteiner .flota .grid-container .cessna, .conteiner .flota .grid-container .cessna72, .conteiner .flota .grid-container .pipper {
     grid-area: cessna;
     list-style-type: none;
-    margin: 3rem;
+    margin: 5rem;
     padding: 0.5rem;
     text-align: center;
     text-decoration: none;
@@ -169,45 +202,45 @@ body {
     margin-bottom: 3rem;
     border: 0.3rem solid black; }
     .conteiner .flota .grid-container ul .lld .delta, .conteiner .flota .grid-container ul .bpg .delta, .conteiner .flota .grid-container ul .clh .delta, .conteiner .flota .grid-container ul .fcb .delta, .conteiner .flota .grid-container ul .gnz .delta, .conteiner .flota .grid-container ul .pa11 .delta {
-      transition: 2s;
+      transition: 1s;
       width: 60%; }
     .conteiner .flota .grid-container ul .lld .delta:hover, .conteiner .flota .grid-container ul .bpg .delta:hover, .conteiner .flota .grid-container ul .clh .delta:hover, .conteiner .flota .grid-container ul .fcb .delta:hover, .conteiner .flota .grid-container ul .gnz .delta:hover, .conteiner .flota .grid-container ul .pa11 .delta:hover {
-      transform: scale(1.5); }
+      transform: scale(1.1); }
   .conteiner .flota .grid-container ul .bpg {
     grid-area: bpg; }
     .conteiner .flota .grid-container ul .bpg .golf {
-      transition: 2s;
+      transition: 1s;
       width: 60%; }
     .conteiner .flota .grid-container ul .bpg .golf:hover {
-      transform: scale(1.5); }
+      transform: scale(1.1); }
   .conteiner .flota .grid-container ul .clh {
     grid-area: clh; }
     .conteiner .flota .grid-container ul .clh .hotel {
-      transition: 2s;
+      transition: 1s;
       width: 60%; }
     .conteiner .flota .grid-container ul .clh .hotel:hover {
-      transform: scale(1.5); }
+      transform: scale(1.1); }
   .conteiner .flota .grid-container ul .fcb {
     grid-area: fcb; }
     .conteiner .flota .grid-container ul .fcb .bravo {
-      transition: 2s;
+      transition: 1s;
       width: 60%; }
     .conteiner .flota .grid-container ul .fcb .bravo:hover {
-      transform: scale(1.5); }
+      transform: scale(1.1); }
   .conteiner .flota .grid-container ul .gnz {
     grid-area: gnz; }
     .conteiner .flota .grid-container ul .gnz .november {
-      transition: 2s;
+      transition: 1s;
       width: 60%; }
     .conteiner .flota .grid-container ul .gnz .november:hover {
-      transform: scale(1.5); }
+      transform: scale(1.1); }
   .conteiner .flota .grid-container ul .pa11 {
     grid-area: pa11; }
     .conteiner .flota .grid-container ul .pa11 .julian {
-      transition: 2s;
+      transition: 1s;
       width: 60%; }
     .conteiner .flota .grid-container ul .pa11 .julian:hover {
-      transform: scale(1.5); }
+      transform: scale(1.1); }
   .conteiner .flota .grid-container .cessna72 {
     grid-area: cessna72; }
   .conteiner .flota .grid-container .pipper {
@@ -216,7 +249,7 @@ body {
 form {
   margin: 20px;
   padding: 10px;
-  background-color: #4682b4;
+  background-color: darkgrey;
   color: black;
   border: 10px solid; }
   form fieldset {
@@ -224,40 +257,118 @@ form {
     form fieldset .pilot {
       text-align: center;
       font-size: 1.5em; }
+    form fieldset .contactenos {
+      text-align: center;
+      font-size: 2em; }
     form fieldset div {
       margin: 1rem;
       font-size: 1em; }
+      form fieldset div .comentario {
+        min-height: 100px;
+        max-height: 200px; }
     form fieldset .botonEnvio {
       margin-left: 5rem;
       padding: 2rem;
       text-align: right; }
 
-.conteiner footer h3 {
-  margin: 1rem;
-  text-align: center; }
-
-.conteiner footer div {
-  text-align: center; }
-  .conteiner footer div h4 {
-    margin: 1rem;
-    text-align: center; }
-
-.conteiner footer p {
-  margin: 1rem;
+.mainInfo {
   text-align: center;
-  font-size: 17px; }
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: 2rem; }
+  .mainInfo .direccion {
+    border: solid; }
+
+.conteiner footer {
+  font-family: 'Kdam Thmor Pro', sans-serif; }
+  .conteiner footer .redes {
+    text-align: center;
+    margin: 2rem; }
+  .conteiner footer .infoFooter {
+    text-align: center; }
+    .conteiner footer .infoFooter h4 {
+      margin: 1rem;
+      text-align: center;
+      font-size: 1rem; }
+    .conteiner footer .infoFooter h5 {
+      margin: 1rem;
+      text-align: center;
+      font-size: 1rem; }
 
 @media screen and (min-width: 720px) {
   .conteiner .menu .parrafo {
     display: block;
     justify-content: center;
+    align-items: center;
     padding: 10px;
     flex-flow: wrap; }
   .conteiner .menu .videos {
     gap: 2rem;
+    margin: 1.5rem;
     justify-items: center;
-    margin: 1rem;
+    height: 35rem;
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: repeat(2, 1fr);
-    grid-template-areas: "tituloVideo tituloVideo" "video1 video2"; } }
+    grid-template-areas: "tituloVideo tituloVideo" "video1 video2"; }
+  .conteiner main .mainCursos {
+    height: 80rem;
+    gap: 20px 30px;
+    justify-items: center;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: repeat(2, 0.3fr);
+    grid-template-areas: "curso1 curso2" "curso3 curso4"; }
+  .conteiner main .paseosAereos .paseos {
+    display: block;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    flex-flow: wrap; }
+  .flota .grid-container {
+    height: 150rem;
+    gap: 1rem;
+    justify-items: center; }
+    .flota .grid-container .cientocincuenta {
+      height: 70rem;
+      gap: 4rem;
+      margin: 1rem;
+      justify-items: center;
+      align-items: center;
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      grid-template-rows: repeat(4, 0.3fr);
+      grid-template-areas: "lld bpg" "clh fcb"; }
+    .flota .grid-container .grid-172 {
+      height: 40rem;
+      gap: 1rem;
+      margin: 3rem;
+      justify-items: center;
+      display: grid;
+      grid-template-columns: 1fr;
+      grid-template-rows: repeat(1, 0.3fr);
+      grid-template-areas: "cessna72" "gnz"; }
+    .flota .grid-container .grid-pa11 {
+      height: 40rem;
+      gap: 1rem;
+      margin: 3rem;
+      justify-items: center;
+      display: grid;
+      grid-template-columns: 1fr;
+      grid-template-rows: repeat(1, 0.3fr);
+      grid-template-areas: "pipper" "pa11"; } }
+
+@media screen and (min-width: 1000px) {
+  .conteiner footer {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center; }
+    .conteiner footer .redes {
+      justify-content: center;
+      margin-right: 10rem;
+      padding-left: 0px; }
+    .conteiner footer .infoFooter {
+      justify-content: center;
+      margin: 0px; } }

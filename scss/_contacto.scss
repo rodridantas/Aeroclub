@@ -1,24 +1,51 @@
 form {
-    margin: 20px;
-    padding: 10px;
-    background-color: #4682b4;
-    color: black;
-    border: 10px solid;
+  margin: 20px;
+  padding: 10px;
+  background-color: darkgrey;
+  color: black;
+  border: 10px solid;
 
-    fieldset {
-      border: 5px dashed;
-      .pilot {
-        text-align: center;
-        font-size: 1.5em;
-      }
-      div {
-        margin: 1rem;
-        font-size: 1em;
-      }
-      .botonEnvio {
-        margin-left: 5rem;
-        padding: 2rem;
-        text-align: right;
+  fieldset {
+    border: 5px dashed;
+    .pilot {
+      text-align: center;
+      font-size: 1.5em;
+    }
+    .contactenos {
+      text-align: center;
+      font-size: 2em;
+    }
+    div {
+      margin: 1rem;
+      font-size: 1em;
+      .comentario{
+        min-height: 100px;
+        max-height: 200px;
       }
     }
+    .botonEnvio {
+      margin-left: 5rem;
+      padding: 2rem;
+      text-align: right;
+    }
   }
+}
+
+.mainInfo {
+
+
+
+
+
+  text-align: center;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+  margin: 2rem;
+ .direccion{
+  border: solid;
+ }
+  
+}

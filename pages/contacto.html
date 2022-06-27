@@ -22,6 +22,12 @@
     <!-- link de css-->
 
     <link rel="stylesheet" href="../css/main.css">
+
+    <!--link fuente -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Kdam+Thmor+Pro&display=swap" rel="stylesheet">
+
     <title>Contacto</title>
 </head>
 
@@ -47,7 +53,7 @@
                                     <a class="nav-link" href="nuestra_flota.html">Nuestra flota</a>
                                 </li>
                                 <a class="nav-link" href="../index.html"><img width="120" height="80"
-                                        src="../img/logo-aero.png" alt="Logo escuela del aeroclub "></a>
+                                        src="../img/logo-aero.webp" alt="Logo del aeroclub "></a>
                                 <li class="nav-item">
                                     <a class="nav-link" href="paseos_aereos.html">Paseos aereos</a>
                                 </li>
@@ -61,8 +67,8 @@
 
             </div>
             <div>
-                <h1><img class="imagen" width="14%" height="125%" src="../img/logo-escuela.png"
-                        alt="Logo del aeroclub">Contacto</h1>
+                <h1><img class="imagen" width="14%" height="125%" src="../img/logo-escuela.webp"
+                        alt="Logo escuela del aeroclub">Contacto</h1>
             </div>
 
         </header>
@@ -70,24 +76,24 @@
         <main>
             <form>
                 <fieldset>
-                    <legend> Contactenos</legend>
+                    <legend class="contactenos"> Contáctenos</legend>
                     <div>
                         <label for="nombre">
-                            Completa tu nombre
+                            Nombre
                         </label>
                         <input type="text" name="nombre" placeholder="Ingresa tu nombre">
                     </div>
 
                     <div>
                         <label for="mail">
-                            Completa tu mail
+                            Mail
                         </label>
                         <input type="email" name="mail" placeholder="Ingresa tu mail">
                     </div>
 
                     <div>
                         <label for="pais">
-                            Seleccione su pais
+                            Pais
                         </label>
                         <select name="pais" id="">
                             <option value="argentina">argentina</option>
@@ -100,7 +106,7 @@
 
                     <div>
                         <label for="condicion">
-                            Seleccione su condicion
+                            Condicion
                         </label>
                         <select name="condicion" id="">
                             <option value="alumno">alumno</option>
@@ -112,7 +118,8 @@
 
                     <div>
                         <label for="mensaje"></label>
-                        <input type="text" name="mensaje" placeholder="Ingresa un mensaje">
+                        <textarea class="comentario" name="comentario" rows="4" cols="20" placeholder="Ingresa un mensaje"></textarea>
+
                     </div>
 
                     <div>
@@ -121,22 +128,42 @@
                     </div>
                 </fieldset>
             </form>
+            
+
+            <div class="mainInfo">
+                <legend class="legend">Informacion</legend>
+                <p><strong>Nuestro telfono:</strong> +54 9 2234259449</p>
+                <p><Strong>Nuestro E-mail:</Strong> aeroclubmdp@gmail.com</p>
+                <legend class="legend">Direccion:</legend>
+                    <p> Ruta
+                        88, km 9,5, de la ciudad de Mar del Plata, Provincia de Buenos Aires, Argentina.</p>
+                    <div>
+                        <iframe
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d6287.373414010244!2d-57.67454164079839!3d-38.007767457819995!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x27759d4ba82091%3A0x9b82699894837d67!2sAeroclub%20Mar%20Del%20Plata%20-%20Batan!5e0!3m2!1ses-419!2sar!4v1656097121874!5m2!1ses-419!2sar"
+                            width="350" height="250" style="border:0;" allowfullscreen="" loading="lazy"
+                            referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    </div>
+                
+            </div>
 
         </main>
 
         <footer>
-            <h3> Todos los derechos reservados</h3>
-
-            <div>
-                <h4> Seguinos en nuestras redes</h4>
+            <div class="redes">
+                <h3> Seguinos en nuestras redes</h3>
                 <a href="https://www.facebook.com/search/top?q=aeroclub%20mar%20del%20plata%20batan"
-                    target="_blank"><img width="40" height="40" src="../img/logoFace.png" alt="Logo de facebook"></a>
+                    target="_blank"><img width="40" height="40" src="../img/logoFace.webp" alt="Logo de facebook"></a>
                 <a href="https://www.instagram.com/aeroclubmardelplata/" target="_blank"><img width="40" height="40"
-                        src="../img/intaLogo.png" alt="Logo de instagram"></a>
+                        src="../img/intaLogo.webp" alt="Logo de instagram"></a>
+                        <a href="https://wa.me/2234259449?text=Hola aeroclub de Mar del Plata! Quiero informacion sobre el curso de piloto. Gracias! "
+                        target="_blank"><img width="40" height="40" src="../img/wsp.webp" alt="icono de wsp"></a>
             </div>
 
-            <p>Pagina diseñada por Rodrigo Dantas</p>
-            <p>Telefono de contacto: 223-4259449</p>
+            <div class="infoFooter">
+
+                <h4>Pagina diseñada por Rodrigo Dantas</h4>
+                <h5>Telefono de contacto: 223-4259449</h5>
+            </div>
         </footer>
     </div>
 
